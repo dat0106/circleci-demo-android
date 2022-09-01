@@ -20,7 +20,7 @@ jobs:
   unit_test:
     executor:
       name: android/android-docker # Docker Executor
-      resource-class: xlarge
+      resource-class: dat0106/self
       tag: 2022.06.1
     steps:
       - checkout
@@ -33,7 +33,7 @@ jobs:
   unit_test_parallel:
     executor:
       name: android/android-docker # Docker Executor
-      resource-class: xlarge
+      resource-class: dat0106/self
       tag: 2022.06.1
     parallelism: 4
     steps:
@@ -56,7 +56,7 @@ jobs:
   integration_test:
     executor:
       name: android/android-machine # Machine Executor
-      resource-class: xlarge
+      resource-class: dat0106/self
       tag: 2022.06.1
     steps:
       - checkout
@@ -67,7 +67,7 @@ jobs:
   beta:
     executor:
       name: android/android-docker # Docker Executor
-      resource-class: xlarge
+      resource-class: dat0106/self
       tag: 2022.06.1
     steps:
       - checkout
